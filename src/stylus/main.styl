@@ -99,6 +99,9 @@ header
         position relative
         margin-top 107px
         justify-content center
+        img
+            position relative
+            left 9px
         /&__title
             position absolute
             text-align center
@@ -128,16 +131,60 @@ header
                 top: 103px;
             &:nth-child(8)
                 right: 343px;
-                bottom: -44px;
+                bottom: -4px;
             &:nth-child(9)
                 right: 526px;
-                bottom: -24px;
+                bottom: 16px;
             &:nth-child(10)
                 left: 598px;
-                bottom: 24px;
+                bottom: 64px;
             &:nth-child(11)
                 left: 460px;
-                bottom: 76px;
+                bottom: 116px;
             &:nth-child(12)
                 left: 322px;
-                bottom: 116px;
+                bottom: 156px;
+
+.otrasli
+    /&__title
+           margin 115px auto        
+.title-block
+    position relative
+    width 502px
+    padding 7px 0
+    background-color white
+    /&__title
+        display inline-block
+        margin-left 52px
+        margin-bottom 0
+        font-size 28px
+        color #0f8ec7
+        text-transform uppercase
+        font-weight bold
+        svg
+            margin-right 11px
+            vertical-align middle
+            transform translateY(-2px)
+    /&__text
+        margin-top 20px
+        margin-bottom 36px
+        font-size 23px
+        font-weight 300
+        text-align center
+    /&:before
+        content ""
+        position absolute
+        height 20px
+        width 100%
+        top -10px
+        background-color #fff
+    /&::after
+        display block
+        content ""
+        position absolute
+        top -33px
+        left 189px
+        border 10px solid #ffd33c
+        width 377px
+        height 261px
+        z-index -1
