@@ -1,0 +1,7 @@
+mixin spr(name, w, h)
+    -attributes.width = w
+    -attributes.height = h || w
+    svg&attributes(attributes)
+        use(xlink:href="img/svg/spritemap.svg#sprite-"+ name)
+
+

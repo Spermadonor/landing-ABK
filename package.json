@@ -1,0 +1,53 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "*",
+    "normalize.css": "*",
+    "wowjs": "*",
+    "@fancyapps/fancybox": "*",
+    "inputmask": "*",
+    "jquery-validation": "*",
+    "slick-carousel": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-loader": "*",
+    "clean-webpack-plugin": "*",
+    "css-loader": "*",
+    "css-mqpacker": "*",
+    "error-overlay-webpack-plugin": "*",
+    "file-loader": "*",
+    "html-loader": "*",
+    "html-webpack-plugin": "*",
+    "mini-css-extract-plugin": "*",
+    "nodemon": "*",
+    "optimize-css-assets-webpack-plugin": "*",
+    "path": "*",
+    "postcss-cssnext": "*",
+    "postcss-loader": "*",
+    "pug-html-loader": "*",
+    "sort-css-media-queries": "*",
+    "style-loader": "*",
+    "stylus": "*",
+    "stylus-loader": "*",
+    "svg-spritemap-webpack-plugin": "*",
+    "svg-url-loader": "*",
+    "tinify-loader": "*",
+    "url-loader": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  },
+  "scripts": {
+    "start": "nodemon --watch webpack.config.js --exec \"webpack-dev-server --mode development --open\"",
+    "dev": "webpack",
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

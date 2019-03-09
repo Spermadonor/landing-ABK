@@ -1,0 +1,143 @@
+@import 'mixin.styl'
+@import '~normalize.css'
+// @import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'
+// @import '~slick-carousel/slick/slick.css'
+// @import '~slick-carousel/slick/slick-theme.css'
+// @import '~lazyYT/lazyYT.css'
+
+*, *::before, *::after
+    box-sizing border-box
+
+body
+    font 15px 'Roboto', sans-serif
+a
+    text-decoration none
+
+.container
+    max-width 1170px
+    margin 0 auto
+header
+    overflow hidden
+.head-foot
+    row-flex()
+    align-items center
+    /&__logo, /&__menu, /&__svyz, /&__btn
+        col()
+    /&__logo
+        size(2)
+    /&__menu
+        size(6)
+        a
+            color black
+    /&__svyz
+        size(2)
+        padding-top 15px
+        text-align right
+    /&__btn
+        size(2)
+        display block
+        margin-left auto
+        margin-top 3px
+        background-color #0f8ec7
+        color #fff
+        font-weight 900
+        /&:hover
+            background-color #0f8ec7 - 30
+    
+    /&__logo
+        font-size 41px
+        font-weight bold
+        font-style italic
+
+.logo_blue
+    color #0f8ec7
+.menu
+    flex()
+    margin-left -10.5px
+    margin-right -10.5px
+    justify-content flex-end
+    font-weight bold
+    text-transform uppercase
+    /&__item
+        position relative
+        margin-left 10.5px
+        margin-right 10.5px
+        /&::after
+            width 0
+            height 2px
+            position absolute
+            left 0
+            bottom -3.3px
+            content ''
+            background-color #0f8ec7
+        /&:hover::after
+            width 100%
+            trans()
+
+.svyz
+    /&__tel
+        display inline-block
+        padding-left 8px
+        padding-bottom 5px
+        border-bottom 1px solid #0f8ec7
+        font-size 16px
+        font-weight 500
+    /&__soc
+        padding-top 7px
+        a
+            margin-left 10px
+.btn
+    padding 9px 24px
+    border none
+    cursor pointer
+
+
+
+.main
+    /&__pic
+        flex()
+        position relative
+        margin-top 107px
+        justify-content center
+        /&__title
+            position absolute
+            text-align center
+            color #0a6087
+            font-weight bold
+            text-transform uppercase
+            &:hover
+                color #ffd33c
+                trans()
+            &:nth-child(2)
+                left: 261px;
+                top: 126px;
+            &:nth-child(3)
+                left: 338px;
+                top: 41px;
+            &:nth-child(4)
+                left: 489px;
+                top: -46px;
+            &:nth-child(5)
+                left: 669px;
+                top: 15px;
+            &:nth-child(6)
+                left: 815px;
+                top: 71px;
+            &:nth-child(7)
+                left: 949px;
+                top: 103px;
+            &:nth-child(8)
+                right: 343px;
+                bottom: -44px;
+            &:nth-child(9)
+                right: 526px;
+                bottom: -24px;
+            &:nth-child(10)
+                left: 598px;
+                bottom: 24px;
+            &:nth-child(11)
+                left: 460px;
+                bottom: 76px;
+            &:nth-child(12)
+                left: 322px;
+                bottom: 116px;
