@@ -35,12 +35,7 @@ header
         text-align right
     /&__btn
         size(2)
-        display block
-        margin-left auto
         margin-top 3px
-        background-color #0f8ec7
-        color #fff
-        font-weight 900
         /&:hover
             background-color #0f8ec7 - 30
     
@@ -90,6 +85,9 @@ header
     padding 9px 24px
     border none
     cursor pointer
+    background-color #0f8ec7
+    color #fff
+    font-weight 900
 
 
 
@@ -147,7 +145,61 @@ header
 
 .otrasli
     /&__title
-           margin 115px auto        
+           margin 115px auto 
+    /&__container
+        margin-top 151px
+        row-flex()
+        flex-wrap wrap
+        margin-bottom -100px
+    /&__item
+        col()
+        position relative
+        margin-bottom 100px
+        padding 54px 30px 20px
+        text-align center
+        box-shadow 0 0 54px -10px
+        size(4)
+        /&__title
+            margin-bottom 0
+            font-size 17px
+            text-transform uppercase
+            /&::before, /&::after
+                content ""
+                position absolute
+                width 108px
+                height 108px
+                left 50%
+                top -55px
+                border-radius 50%
+                transform translatex(-50%)
+                background-color #0f8ec7
+            /&::before
+                 background-image url("../img/icon-rob.png")
+                 background-repeat no-repeat
+                 background-position center
+            /&.sud::before
+                background-image url("../img/icon-sud.png")
+            /&.oc::before
+                background-image url("../img/icon-2home.png")
+            /&.zal::before
+                background-image url("../img/icon-home$.png")
+            /&.iz::before
+                background-image url("../img/icon-sect.png")
+            /&.ush::before
+                background-image url("../img/icon-gor.png")
+            /&::after
+                background-color #e9ebec
+                top -50px
+                z-index -1
+        /&__text
+            margin-top 8px
+    /&__btn
+        display block
+        margin-left auto
+        margin-right auto
+        padding 17px 31px
+        margin-top 59px
+        text-transform uppercase
 .title-block
     position relative
     width 502px
@@ -176,7 +228,7 @@ header
         position absolute
         height 20px
         width 100%
-        top -10px
+        top -9px
         background-color #fff
     /&::after
         display block
