@@ -36,9 +36,6 @@ header
     /&__btn
         size(2)
         margin-top 3px
-        /&:hover
-            background-color #0f8ec7 - 30
-    
     /&__logo
         font-size 41px
         font-weight bold
@@ -88,6 +85,9 @@ header
     background-color #0f8ec7
     color #fff
     font-weight 900
+    trans()
+    /&:hover
+        background-color #0f8ec7 - 30
 
 
 
@@ -207,17 +207,18 @@ header
     background-color white
     /&__title
         display inline-block
-        margin-left 52px
+        margin-left 40px
         margin-bottom 0
         font-size 28px
         color #0f8ec7
         text-transform uppercase
         font-weight bold
         svg
-            margin-right 11px
+            margin-right 24px
             vertical-align middle
             transform translateY(-2px)
     /&__text
+        margin-left -6px
         margin-top 20px
         margin-bottom 36px
         font-size 23px
@@ -240,3 +241,102 @@ header
         width 377px
         height 261px
         z-index -1
+
+.garantii
+    margin-top 135px
+    padding-bottom 56px
+    position: relative
+    background url("../img/bg_1.png") no-repeat center/cover
+    box-shadow  0 0 81px 0px #80808059
+    overflow hidden
+    z-index -1
+    /&__container
+        margin-top 109px
+        row-flex()
+        flex-wrap wrap
+    /&__title
+        margin 99px auto 0
+        /&::after
+            width 315px
+            height 231px
+            left 200px
+            top -20px
+        /&::before
+            display none
+        .title-block__title
+            margin-left 60px
+        .title-block__text
+            margin-bottom 20px
+    /&__item
+        col()
+        margin-bottom 70px
+        text-align center
+        size(3)
+        /&__text
+            margin-top 11px
+            font-size 17px
+            font-weight bold
+            text-transform uppercase
+.pt4
+    padding-top 4px
+.mt-4
+    margin-top -4px
+.mt-8
+    margin-top -8px
+
+.worck
+    /&__title
+        margin 142px auto 93px
+    .title-block::after
+        top: -38px;
+        left: 160px;
+        width: 374px;
+        height: 261px;
+    .title-block::before
+        top -14px
+    .title-block__text
+        margin-bottom 56px
+    .btn
+        display block
+        margin 0 auto
+        margin-top: 64px;
+        padding: 16px 32px;
+        text-transform uppercase
+.list
+    margin 0
+    padding 0
+    /&__item
+        cent()
+        position relative
+        width 269px
+        height 113px
+        margin-bottom 123px
+        border 3px solid #ffd33c
+        list-style-type none
+    /&__num
+        display block
+        position absolute
+        padding-right: 29px;
+        padding-bottom: 20px;
+        left: -4px;
+        top: -22px;
+        font-size 32px
+        color #0f8ec7
+        font-weight bold
+        background-color white
+        z-index 1
+    /&__text
+        font-size 17px
+        font-weight 900
+        text-align center
+        text-transform uppercase
+.etapi
+    overflow hidden
+    text-align center
+    /&__list
+        float right
+        margin-right: -65px;
+        margin-top: 33px;
+    /&__img
+        margin-right -28px
+        float right
