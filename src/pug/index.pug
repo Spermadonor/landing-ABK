@@ -172,8 +172,6 @@ html(lang="ru")
                     +spr('tire', 60, 4)
                     | О нашей компании:
                 p.title-block__text История становления
-
-
         .scheme
             img.scheme__img(src="../img/scheme-1.png", alt="scheme")
             ul.scheme__list
@@ -199,4 +197,15 @@ html(lang="ru")
                     .scheme__list__text.y-2018-text.
                         • Аккредитована в ПАО «НК «Роснефть»;#[br]• Рейтинг Эксперт-РА подтверждается не ниже 30-го места;#[br]• Более одной тысячи отчетов;#[br]• Охват работы по оценке и финансовому консалтингу#[br]по всей России;#[br]• 89% клиентов возвращаются к нам;#[br]• Собственное программное обеспечение (ПО) для оценки;#[br]• Высокое качество для самого требовательного клиента;#[br]• Мобильные и самые клиентоориентированные на рынке!
         button(type="button").btn Связаться с нами
-
+    section.predstav
+        .container
+            .title-block.predstav__title
+                    h2.title-block__title
+                        +spr('tire', 60, 4)
+                        | Наши представительства в России:
+                    p.title-block__text Для вашего ознакомления в виде#[br]удобной интерактивной карты
+            .inter-map
+                img.inter-map__img(src="../img/map.png", alt="pic map")
+                ul
+                    li
+                        img.inter-map__point(src="../img/point-map.png", alt="point")

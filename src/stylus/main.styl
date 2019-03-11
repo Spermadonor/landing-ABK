@@ -470,3 +470,54 @@ li
     /&-text
         right 116px
         bottom 68px
+.predstav
+    position relative
+    margin-top 125px
+    padding-bottom 64px
+    background url("../img/bg_3.png") no-repeat center/cover
+    box-shadow  0 0 81px 0px #80808059
+    overflow hidden
+    /&__title
+        margin auto
+        width 677px
+        margin-top 62px
+        background transparent
+        z-index 1
+        &::after
+            clip rect(0px, 445px, 180px, 32px)
+            top: -1px;
+            left: 225px;
+            width: 431px;
+            height: 166px;
+        &::before
+            height 0
+    .title-block
+        &__title
+            margin-left -11px
+        /&__text
+            &::before
+                position absolute
+                content ""
+                width 10px
+                height 4px
+                bottom: 27px;
+                left: 257px;
+                background-color #ffd33c
+            &::after
+                position absolute
+                content ""
+                width 10px
+                height 6px
+                top 8px
+                left 257px
+                background-color #ffd33c
+.inter-map
+    display inline-block
+    position relative
+    margin-top 32px
+    /&__point
+        position absolute
+        right 395px
+        bottom 134px
+        cursor pointer
+        z-index 1
