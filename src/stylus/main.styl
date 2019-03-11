@@ -18,6 +18,11 @@ a
     margin 0 auto
 header
     overflow hidden
+ul
+    margin 0
+    padding 0
+li
+    list-style-type none
 .head-foot
     row-flex()
     align-items center
@@ -303,8 +308,6 @@ header
         padding: 16px 32px;
         text-transform uppercase
 .list
-    margin 0
-    padding 0
     /&__item
         cent()
         position relative
@@ -312,7 +315,6 @@ header
         height 113px
         margin-bottom 123px
         border 3px solid #ffd33c
-        list-style-type none
     /&__num
         display block
         position absolute
@@ -376,3 +378,95 @@ header
         text-align center
         /&.mt
             margin-top 22px
+.about
+    /&__title
+        width 430px
+        margin auto
+        margin-top 151px
+        .title-block__title
+            margin-top 15px
+            margin-left -13px
+        .title-block__text
+            margin-left 1px
+            margin-bottom 14px
+        &::before
+            top -2px
+        &::after
+            top -16px
+            left 150px
+            width 315px
+            height 152px
+    .btn
+        display block
+        margin 0 auto
+        margin-top: 119px;
+        padding: 16px 25px;
+        text-transform uppercase
+.scheme
+    display inline-block
+    margin-top 116px
+    position relative
+    /&__list
+        /&__title
+            position absolute
+            font-size 17px
+            color #0a6087
+            font-weight 900
+        /&__text
+            position absolute
+            font-size 13px
+            font-weight 300
+    /&__img
+        margin-left 2px
+
+.y-2005
+    /&-title
+        left 31px
+        bottom 34px
+    /&-text
+        left 32px
+        bottom 10px
+.y-2006
+    /&-title
+        left 125px
+        bottom 248px
+    /&-text
+        left 125px
+        bottom 223px
+        font-size 15px
+.y-2008
+    /&-title
+        left 320px
+        bottom 127px
+    /&-text
+        left 321px
+        bottom 12px
+.y-2009
+    /&-title
+        left 230px
+        bottom 387px
+        text-align right
+    /&-text
+        left 27px
+        bottom 493px
+.y-2010
+    /&-title
+        left 621px
+        bottom 287px
+.y-2012
+    /&-title
+        right 334px
+        top 63px
+        text-align right
+    /&-text
+        right 333px
+        top -53px
+        text-align right
+.y-2018
+    /&-title
+        right 120px
+        bottom 215px
+        text-align right
+    /&-text
+        right 116px
+        bottom 68px
