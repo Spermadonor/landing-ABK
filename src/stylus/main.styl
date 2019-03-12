@@ -515,9 +515,36 @@ li
     display inline-block
     position relative
     margin-top 32px
-    /&__point
+    ul
+        >li
+            >img
+                 position absolute
+                 z-index 1
+                 cursor pointer
+    /&__point-1
+        left 135px
+        bottom 365px
+        /&+ .inter-map__opis
+            top 0
+    /&__point-2
+        left -4px
+        bottom 273px
+    /&__opis
+        display none
         position absolute
-        right 395px
-        bottom 134px
-        cursor pointer
+        background-color white
+        width: 240px;
+        height: 162px;
+        border-radius: 20px;
         z-index 1
+        /&::after
+            position absolute
+            content ""
+            width 27px
+            height 30px
+            left 18px
+            bottom -7px
+            background-color white
+            transform skewY(-26deg)
+            z-index -1
+
