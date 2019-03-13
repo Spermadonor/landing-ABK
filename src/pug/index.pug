@@ -8,6 +8,7 @@ html(lang="ru")
         meta(name="description" content="")
         meta(name="keywords" content="")
         title АБК - Активные Бизнес Консультации, независимая оценочная компания
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ec9e89fa-00e9-4108-93ba-4a505c2ece77")
     body
         header.container
             .head-foot
@@ -32,7 +33,7 @@ html(lang="ru")
                             img(src="../img/facebook.png", alt="facebook logo").svyz_soc__logo
                         a(href="#")
                             img(src="../img/instagram.png", alt="instagram logo").svyz_soc__logo
-                button(type="button").head-foot__btn.btn Оставить заявку
+                button(type="button").head-foot__btn.btn.zayv Оставить заявку
         sectio.main.container
             .main__pic
                 img(src="../img/main.png", alt="pic")
@@ -72,7 +73,7 @@ html(lang="ru")
                 .otrasli__item
                     h3.otrasli__item__title.ush Определение ущерба
                     p.otrasli__item__text Обоснование стоимости нанесённого ущерба при действиях или бездействиях виновных#[br]#[br]
-            button(type="button").otrasli__btn.btn Заказать услугу
+            button(type="button").otrasli__btn.btn.zayv Заказать услугу
         section.garantii
             .container
                 .title-block.garantii__title
@@ -105,121 +106,162 @@ html(lang="ru")
                     .garantii__item.mt-4
                         img(src="../img/euro.png", alt="icon")
                         .garantii__item__text СТРАХОВАНИЕ КОМПАНИИ БОЛЕЕ ЧЕМ НА 500 МЛН РУБ
-    section.worck.container
-        .title-block.worck__title
-            h2.title-block__title
-                +spr('tire', 60, 4)
-                | Порядок работы:
-            p.title-block__text Мы сделаем процесс оценки#[br]для вас — удобным, быстрым и точным!
-        .etapi
-            img.etapi__img(src="../img/etap.png", alt="pic")
-            ul.etapi__list.list
-                li.list__item
-                    span.list__num 1
-                    span.list__text Заключаем договор
-                li.list__item
-                    span.list__num 2
-                    span.list__text Учтем тонкости и#[br]пожелания
-                li.list__item
-                    span.list__num 3
-                    span.list__text Согласуем результаты
-                li.list__item
-                    span.list__num 4
-                    span.list__text Подготовим#[br]отчет об оценке,
-                li.list__item
-                    span.list__num 5
-                    span.list__text Защитим результаты#[br]в суде, банках, налоговой
-        button(type="button").btn Заказать услугу
-    section.clienti
-        .container
-            .title-block.clienti__title
+        section.worck.container
+            .title-block.worck__title
                 h2.title-block__title
                     +spr('tire', 60, 4)
-                    | Нам доверили оценку:
-                p.title-block__text За 14 лет уже более 4 тыс. клиентов и партнеров!
-            .clienti__container
-                    .clienti__item
-                        img(src="../img/logo_bryan.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_rosgos.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_gaz.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_rosnef.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_vtb.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_sber.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_rosa.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_gaza.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_mia.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_ural.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_alfa.png", alt="logo")
-                    .clienti__item
-                        img(src="../img/logo_veb.png", alt="logo")
-                    .clienti__item.mt
-                        img(src="../img/logo_sel.png", alt="logo")
-                    .clienti__item.mt
-                        img(src="../img/logo_gazb.png", alt="logo")
-    section.about.container
-        .title-block.about__title
-                h2.title-block__title
-                    +spr('tire', 60, 4)
-                    | О нашей компании:
-                p.title-block__text История становления
-        .scheme
-            img.scheme__img(src="../img/scheme-1.png", alt="scheme")
-            ul.scheme__list
-                li.scheme__list__item
-                    h3.scheme__list__title.y-2005-title Август 2005 года -#[br]основание компании
-                    .scheme__list__text.y-2005-text Цель - сделать услуги по оценке#[br]лучшими на рынке
-                li.scheme__list__item
-                    h3.scheme__list__title.y-2006-title Февраль 2006 года –#[br]сбор команды 
-                    .scheme__list__text.y-2006-text отработка бизнес#[br]процессов
-                li.scheme__list__item
-                    h3.scheme__list__title.y-2008-title 2008 год – вход в топ#[br]100 крупнейших#[br]оценочных компаний РФ
-                    .scheme__list__text.y-2008-text Компания успешно выполнила сложнейшие#[br]проекты по оценке для:#[br]#[br]• предприятий пищевой промышленности;#[br]• предприятий связи и телекоммуникации;#[br]• предприятий оптовой и розничной торговли;#[br]• предприятий стекольной промышленности.
-                li.scheme__list__item 
-                    h3.scheme__list__title.y-2009-title 2009 г. – АБК в топ 50#[br]крупнейших оценочных#[br]компаний РФ
-                    .scheme__list__text.y-2009-text Компания приступила к долгосрочной программе по внедрению#[br]системы менеджмента качества ИСО 9001:2001 «Система#[br]менеджмента качества. Требования». Завершили внедрение#[br]в 2009 году.#[br]#[br]Количество банков, в которых принимают отчеты об оценке#[br]компании составляет более 70-ти. В партнерстве с крупнейшими#[br]оценочными компаниями были выполнены сложные проекты#[br]по оценке крупнейших предприятий РФ в рамках программы#[br]приватизации.#[br]За четыре с небольшим года компания признана одной из самых#[br]динамично развивающихся
-                li.scheme__list__item 
-                    h3.scheme__list__title.y-2010-title 2010 – Аккредитация#[br]в ОАО “Газпром” и Банке#[br]“Возрождение”
-                li.scheme__list__item 
-                    h3.scheme__list__title.y-2012-title 2012 г. – в10-ке#[br]лучших
-                    .scheme__list__text.y-2012-text В результате исследования, проведенного#[br]рейтинговым агентством «ЭКСПЕРТ-РА» по итогам#[br]работы за 2012 год Компания находится на 9-м#[br]месте по объёмам оценки недвижимости в#[br]Российской Федерации.В рейтинге крупнейших#[br]компаний, работающих на российском рынке#[br]оценки наша компания заняла 18-е место
-                li.scheme__list__item 
-                    h3.scheme__list__title.y-2018-title 2018 год – Стабильность#[br]и неизменное#[br]отточенное ачество!
-                    .scheme__list__text.y-2018-text.
-                        • Аккредитована в ПАО «НК «Роснефть»;#[br]• Рейтинг Эксперт-РА подтверждается не ниже 30-го места;#[br]• Более одной тысячи отчетов;#[br]• Охват работы по оценке и финансовому консалтингу#[br]по всей России;#[br]• 89% клиентов возвращаются к нам;#[br]• Собственное программное обеспечение (ПО) для оценки;#[br]• Высокое качество для самого требовательного клиента;#[br]• Мобильные и самые клиентоориентированные на рынке!
-        button(type="button").btn Связаться с нами
-    section.predstav
-        .container
-            .title-block.predstav__title
+                    | Порядок работы:
+                p.title-block__text Мы сделаем процесс оценки#[br]для вас — удобным, быстрым и точным!
+            .etapi
+                img.etapi__img(src="../img/etap.png", alt="pic")
+                ul.etapi__list.list
+                    li.list__item
+                        span.list__num 1
+                        span.list__text Заключаем договор
+                    li.list__item
+                        span.list__num 2
+                        span.list__text Учтем тонкости и#[br]пожелания
+                    li.list__item
+                        span.list__num 3
+                        span.list__text Согласуем результаты
+                    li.list__item
+                        span.list__num 4
+                        span.list__text Подготовим#[br]отчет об оценке,
+                    li.list__item
+                        span.list__num 5
+                        span.list__text Защитим результаты#[br]в суде, банках, налоговой
+            button(type="button").btn.zayv Заказать услугу
+        section.clienti
+            .container
+                .title-block.clienti__title
                     h2.title-block__title
                         +spr('tire', 60, 4)
-                        | Наши представительства в России:
-                    p.title-block__text Для вашего ознакомления в виде#[br]удобной интерактивной карты
-            .inter-map
-                img.inter-map__img(src="../img/map_3.png", alt="pic map")
-                ul
-                    li
-                        img.inter-map__point-1(src="../img/point-map.png", alt="point")
-                        .inter-map__opis
-                            h4 РФ, г.Москва
-                            img(src="../img/logo-home.png", alt="logo home")
-                            .inter__map__adress г.Москва Электрический пер., д. 3/10, с. 3, эт. 3.
-                            img(src="../img/logo-call.png", alt="logo-call")
-                            .inter__map__tell  +7 (495) 134-47-55#[br]+7 (495) 134-47-551
-                    li
-                        img.inter-map__point-2(src="../img/point-map.png", alt="point")
-                        .inter-map__opis
-                            h4  Крым, г. Севастополь
-                            img(src="../img/logo-home.png", alt="logo home")
-                            .inter__map__adress  г. Севастополь, ул. Вакуленчука, 29, офис 408.
-                            img(src="../img/logo-call.png", alt="logo-call")
-                            .inter__map__tell  +7(916) 357-75-84
+                        | Нам доверили оценку:
+                    p.title-block__text За 14 лет уже более 4 тыс. клиентов и партнеров!
+                .clienti__container
+                        .clienti__item
+                            img(src="../img/logo_bryan.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_rosgos.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_gaz.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_rosnef.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_vtb.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_sber.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_rosa.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_gaza.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_mia.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_ural.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_alfa.png", alt="logo")
+                        .clienti__item
+                            img(src="../img/logo_veb.png", alt="logo")
+                        .clienti__item.mt
+                            img(src="../img/logo_sel.png", alt="logo")
+                        .clienti__item.mt
+                            img(src="../img/logo_gazb.png", alt="logo")
+        section.about.container
+            .title-block.about__title
+                    h2.title-block__title
+                        +spr('tire', 60, 4)
+                        | О нашей компании:
+                    p.title-block__text История становления
+            .scheme
+                img.scheme__img(src="../img/scheme-1.png", alt="scheme")
+                ul.scheme__list
+                    li.scheme__list__item
+                        h3.scheme__list__title.y-2005-title Август 2005 года -#[br]основание компании
+                        .scheme__list__text.y-2005-text Цель - сделать услуги по оценке#[br]лучшими на рынке
+                    li.scheme__list__item
+                        h3.scheme__list__title.y-2006-title Февраль 2006 года –#[br]сбор команды 
+                        .scheme__list__text.y-2006-text отработка бизнес#[br]процессов
+                    li.scheme__list__item
+                        h3.scheme__list__title.y-2008-title 2008 год – вход в топ#[br]100 крупнейших#[br]оценочных компаний РФ
+                        .scheme__list__text.y-2008-text Компания успешно выполнила сложнейшие#[br]проекты по оценке для:#[br]#[br]• предприятий пищевой промышленности;#[br]• предприятий связи и телекоммуникации;#[br]• предприятий оптовой и розничной торговли;#[br]• предприятий стекольной промышленности.
+                    li.scheme__list__item 
+                        h3.scheme__list__title.y-2009-title 2009 г. – АБК в топ 50#[br]крупнейших оценочных#[br]компаний РФ
+                        .scheme__list__text.y-2009-text Компания приступила к долгосрочной программе по внедрению#[br]системы менеджмента качества ИСО 9001:2001 «Система#[br]менеджмента качества. Требования». Завершили внедрение#[br]в 2009 году.#[br]#[br]Количество банков, в которых принимают отчеты об оценке#[br]компании составляет более 70-ти. В партнерстве с крупнейшими#[br]оценочными компаниями были выполнены сложные проекты#[br]по оценке крупнейших предприятий РФ в рамках программы#[br]приватизации.#[br]За четыре с небольшим года компания признана одной из самых#[br]динамично развивающихся
+                    li.scheme__list__item 
+                        h3.scheme__list__title.y-2010-title 2010 – Аккредитация#[br]в ОАО “Газпром” и Банке#[br]“Возрождение”
+                    li.scheme__list__item 
+                        h3.scheme__list__title.y-2012-title 2012 г. – в10-ке#[br]лучших
+                        .scheme__list__text.y-2012-text В результате исследования, проведенного#[br]рейтинговым агентством «ЭКСПЕРТ-РА» по итогам#[br]работы за 2012 год Компания находится на 9-м#[br]месте по объёмам оценки недвижимости в#[br]Российской Федерации.В рейтинге крупнейших#[br]компаний, работающих на российском рынке#[br]оценки наша компания заняла 18-е место
+                    li.scheme__list__item 
+                        h3.scheme__list__title.y-2018-title 2018 год – Стабильность#[br]и неизменное#[br]отточенное ачество!
+                        .scheme__list__text.y-2018-text.
+                            • Аккредитована в ПАО «НК «Роснефть»;#[br]• Рейтинг Эксперт-РА подтверждается не ниже 30-го места;#[br]• Более одной тысячи отчетов;#[br]• Охват работы по оценке и финансовому консалтингу#[br]по всей России;#[br]• 89% клиентов возвращаются к нам;#[br]• Собственное программное обеспечение (ПО) для оценки;#[br]• Высокое качество для самого требовательного клиента;#[br]• Мобильные и самые клиентоориентированные на рынке!
+            button(type="button").btn.zayv Связаться с нами
+        section.predstav
+            .container
+                .title-block.predstav__title
+                        h2.title-block__title
+                            +spr('tire', 60, 4)
+                            | Наши представительства в России:
+                        p.title-block__text Для вашего ознакомления в виде#[br]удобной интерактивной карты
+                .inter-map
+                    img.inter-map__img(src="../img/map.png", alt="pic map")
+        section.contacts.container
+            .title-block.contacts__title
+                        h2.title-block__title
+                            +spr('tire', 60, 4)
+                            | Наши контакты:
+            .contacts__block
+                .contacts__data
+                    .contacts__name
+                        img(src="../img/logo_home.png", alt="logo-home")
+                        span Центральный адрес
+                    .contacts__text г.Москва Электрический пер., д. 3/10, с. 3, эт. 3.
+                    button(type="button").btn.contacts__btn Показать на карте
+                    .contacts__name
+                        img(src="../img/logo_tel.png", alt="logo-tel")
+                        span Главные телефоны
+                    .contacts__text +7 (495) 134-47-55#[br]+7 (495) 134-47-55
+                    button(type="button").btn.contacts__btn Позвонить
+                    .contacts__name
+                        img(src="../img/logo_mail.png", alt="logo-tel")
+                        span E-mail
+                    .contacts__text abk@active-consult.ru
+                    button(type="button").btn.contacts__btn Написать
+                .contacts__map
+                    #map
+        footer
+            .container
+                .head-foot
+                    .head-foot__logo ABK
+                    .head-foot__menu
+                        nav.menu
+                            a(href="#").menu__item О компании
+                            a(href="#").menu__item Отрасли
+                            a(href="#").menu__item Гарантии
+                            a(href="#").menu__item Схема работы
+                            a(href="#").menu__item Контакты
+                    .head-foot__svyz.svyz
+                        .svyz__tel +7 (495) 134-47-55
+                        .svyz__soc
+                            a(href="#")
+                                img(src="../img/whatsapp-2.png", alt="logo whatsapp").svyz_soc__logo
+                            a(href="#")
+                                img(src="../img/viber-2.png", alt="logo viber")
+                            a(href="#")
+                                img(src="../img/vk-2.png", alt="logo vk")
+                            a(href="#")
+                                img(src="../img/facebook-2.png", alt="facebook logo").svyz_soc__logo
+                            a(href="#")
+                                img(src="../img/instagram-2.png", alt="instagram logo").svyz_soc__logo
+                    button(type="button").head-foot__btn.btn.zayv Оставить заявку
+        .modal-z
+            form(action="" method="post")
+                input(type="text" name='name' placeholder="Ваше имя")
+                input(type="tel" name="phone" placeholder="Контактный телефон")
+                input(type="email" name="mail" placeholder="Ващ E-mail")
+                button(type="submit").btn Отправить
+                label
+                    input(type="checkbox")
+                    | Даю согласие на обработку моих пресоональных данных
