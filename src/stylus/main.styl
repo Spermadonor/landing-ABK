@@ -102,51 +102,61 @@ li
         position relative
         margin-top 107px
         justify-content center
-        img
+        >img
             position relative
             left 9px
+        /&__table
+            display none
+            position absolute
+            left 50%
+            top 124px
+            transform translateX(-50%)
+        /.t-1
+            left: 87px;
+            top: 127px;
+        /.t-2
+            left: 163px;
+            top: 41px;
+         /.t-3
+            left: 314px;
+            top: -46px;
+        /.t-4
+            left: 494px;
+            top: 15px;
+        /.t-5
+            left: 640px;
+            top: 71px;
+        /.t-6
+            left: 774px;
+            top: 103px;
+        /.t-7
+            right: 168px;
+            bottom: -4px;
+        /.t-8
+            right: 352px;
+            bottom: 16px;
+        /.t-9
+            left: 423px;
+            bottom: 64px;
+        /.t-10
+            left: 285px;
+            bottom: 116px;
+        /.t-11
+            left: 147px;
+            bottom: 156px;
         /&__title
             position absolute
             text-align center
             color #0a6087
             font-weight bold
             text-transform uppercase
-            &:hover
+            cursor pointer
+            z-index 1
+            trans()
+            /&:hover
                 color #ffd33c
-                trans()
-            &:nth-child(2)
-                left: 261px;
-                top: 126px;
-            &:nth-child(3)
-                left: 338px;
-                top: 41px;
-            &:nth-child(4)
-                left: 489px;
-                top: -46px;
-            &:nth-child(5)
-                left: 669px;
-                top: 15px;
-            &:nth-child(6)
-                left: 815px;
-                top: 71px;
-            &:nth-child(7)
-                left: 949px;
-                top: 103px;
-            &:nth-child(8)
-                right: 343px;
-                bottom: -4px;
-            &:nth-child(9)
-                right: 526px;
-                bottom: 16px;
-            &:nth-child(10)
-                left: 598px;
-                bottom: 64px;
-            &:nth-child(11)
-                left: 460px;
-                bottom: 116px;
-            &:nth-child(12)
-                left: 322px;
-                bottom: 156px;
+                /& + div
+                    display block 
 
 .otrasli
     /&__title
@@ -588,10 +598,35 @@ footer
     max-width: 369px;
     height: 449px;
     text-align center
-    box-shadow: 0px 0px 32.4px 7.6px rgba(88, 103, 110, 0.18);
+    label
+        position relative
+        cursor pointer
+    [type=checkbox]
+            display none
+            &:checked + .modal-z__custom-select::after
+                opacity 1
+    /&__custom-select
+        padding-left 20px
+        font-size 13px
+        font-weight 300
+        /&::before
+            content ''
+            position absolute
+            left 0
+            top 3px
+            width 13px
+            height 13px
+            border 1px solid rgb(167, 167, 167)
+        /&::after
+            opacity 0
+            position absolute
+            content url(../img/selected.png)
+            left 3px
+            top 1px
+            trans()
     form
         margin-top 30px
-        >input, label
+        >input
             display block
         >input
             width 100%
@@ -599,6 +634,9 @@ footer
             margin-bottom 33px
             padding 0 25px
     .btn
+        display block
+        margin-left auto
+        margin-right auto
         margin-top 10px
         margin-bottom 25px
         padding 0
