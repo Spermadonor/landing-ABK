@@ -1,4 +1,6 @@
-//import 'slick-carousel';
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import '@fancyapps/fancybox';
 //import 'lazyYT/lazyYT.js';
 import './fonts/fonts.css';
@@ -35,3 +37,16 @@ ymaps.ready(function () {
 $('.zayv').click(()=> {
 	$.fancybox.open($('.modal-z'));
 })
+
+$('.menu-gamb').click(function() {
+	$(this).next().toggleClass('menu_height');
+})
+
+
+if (window.matchMedia("(max-width: 976px)").matches) {
+	//$('.main__pic').css('display', 'none');
+	$('.main__pic_img').remove();
+	$(".main__pic").slick({
+		dots: true
+	});
+}

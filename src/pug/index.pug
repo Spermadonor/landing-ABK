@@ -14,6 +14,7 @@ html(lang="ru")
             .head-foot
                 .head-foot__logo.logo_blue ABK
                 .head-foot__menu
+                    +spr('bur', '48px')(fill="#000").menu-gamb
                     nav.menu
                         a(href="#").menu__item О компании
                         a(href="#").menu__item Отрасли
@@ -33,39 +34,40 @@ html(lang="ru")
                             img(src="../img/facebook.png", alt="facebook logo").svyz_soc__logo
                         a(href="#")
                             img(src="../img/instagram.png", alt="instagram logo").svyz_soc__logo
-                button(type="button").head-foot__btn.btn.zayv Оставить заявку
+                .head-foot__btn
+                    button(type="button").btn.zayv Оставить заявку
         section.main.container
             .main__pic
-                img(src="../img/main.png", alt="pic")
-                .main_pic__text
+                img.main__pic_img(src="../img/main.png", alt="pic")
+                .main__pic__text
                     .main__pic__title.t-1 Оценка векселей#[br]и облигаций
                     .main__pic__table
                         img(src="../img/table_vex.png", alt="table")
-                .main_pic__text
+                .main__pic__text
                     .main__pic__title.t-2 Оценка коммерческой#[br]недвижимости
                     .main__pic__table
                         img(src="../img/table_ned.png", alt="table")
-                .main_pic__text
+                .main__pic__text
                     .main__pic__title.t-3 Переоценка основных средств#[br](РСБУ и МСФО)
                     .main__pic__table
                         img(src="../img/table_pereoc.png", alt="table")
-                .main_pic__text
+                .main__pic__text
                     .main__pic__title.t-4 Оценка воздушных#[br]и морских судов
                     .main__pic__table
                         img(src="../img/table_avia.png", alt="table")
-                .main_pic__text
+                .main__pic__text
                     .main__pic__title.t-5 Оценка бизнеса
                     .main__pic__table
                         img(src="../img/table_biz.png", alt="table")
-                .main_pic__text
+                .main__pic__text
                     .main__pic__title.t-6 Оценка в целях оспаривания#[br]кадастровой  стоимости неджимости
                     .main__pic__table
                         img(src="../img/table_kad.png", alt="table")
-                .main_pic__text
+                .main__pic__text
                     .main__pic__title.t-7 Оценка земельных#[br]участков
                     .main__pic__table
                         img(src="../img/table_zem.png", alt="table")
-                .main_pic__text
+                .main__pic__text
                     .main__pic__title.t-8 Оценка транспортных#[br]средств
                     .main__pic__table
                         img(src="../img/table_trans.png", alt="table")
@@ -269,6 +271,7 @@ html(lang="ru")
                 .head-foot
                     .head-foot__logo ABK
                     .head-foot__menu
+                        +spr('bur', '48px')(fill="#fff").menu-gamb
                         nav.menu
                             a(href="#").menu__item О компании
                             a(href="#").menu__item Отрасли
@@ -288,7 +291,8 @@ html(lang="ru")
                                 img(src="../img/facebook-2.png", alt="facebook logo").svyz_soc__logo
                             a(href="#")
                                 img(src="../img/instagram-2.png", alt="instagram logo").svyz_soc__logo
-                    button(type="button").head-foot__btn.btn.zayv Оставить заявку
+                    .head-foot__btn
+                        button(type="button").btn.zayv Оставить заявку
         .modal-z
             form(action="" method="post")
                 input(type="text" name='name' placeholder="Ваше имя")
