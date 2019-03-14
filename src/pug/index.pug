@@ -12,7 +12,7 @@ html(lang="ru")
     body
         header.container
             .head-foot
-                .head-foot__logo.logo_blue ABK
+                .head-foot__logo ABK
                 .head-foot__menu
                     +spr('bur', '48px')(fill="#000").menu-gamb
                     nav.menu
@@ -42,47 +42,245 @@ html(lang="ru")
                 .main__pic__text
                     .main__pic__title.t-1 Оценка векселей#[br]и облигаций
                     .main__pic__table
-                        img(src="../img/table_vex.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_veks.png", alt="logo_veks")
+                            .table__container       
+                                .table__left-block
+                                    .table__title Оценка вексиля и облигаций
+                                    .table__text.
+                                        • Купля - продажа векселя;#[br]• Внесение в УК векселей;#[br]• Залог в банке;#[br]• До/Судебные споры;#[br]• Опр. платежеспособности;
+                                .table__right-block
+                                    .table__title Оценить для
+                                    .table__text.
+                                        • Учтем все тонкости;#[br]• Заключим договор;#[br]• Подготовим отчет;#[br]• Защитим отчет в суде 
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 5 000 - 20 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 3 дня
                 .main__pic__text
                     .main__pic__title.t-2 Оценка коммерческой#[br]недвижимости
                     .main__pic__table
-                        img(src="../img/table_ned.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_nedv.png", alt="logo_vedv")
+                            .table__container       
+                                .table__left-block
+                                    .table__title Оценка ком. недвижимости:
+                                    .table__text.
+                                        • Офисы;#[br]• Торговые обьекты;#[br]• Производ. площади;#[br]• Склады;#[br]• Кафе - рестораны;
+                                .table__right-block
+                                    .table__title Оценить для
+                                    .table__text.
+                                        • Залог в банк;#[br]• Купля - продажа;#[br]• Судебные споры;#[br]• Изьятие/Раздел/Выкуп;#[br]• Кадастровые споры
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 10 000 - 60 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 4 дня
                 .main__pic__text
                     .main__pic__title.t-3 Переоценка основных средств#[br](РСБУ и МСФО)
                     .main__pic__table
-                        img(src="../img/table_pereoc.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_pereoc.png", alt="logo_pereoc")
+                            .table__container       
+                                .table__left-block
+                                    .table__title  Переоценка основных средств:
+                                    .table__text.
+                                        • Определение баланса;#[br]• Ежегодная переоценка;#[br]• Минимизация налогов;#[br]• Увеличение уст. капитала;#[br]• Привлечение инвестиций;
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Учтем все тонкости;#[br]• Заключим договор;#[br]• Составим отчет об оценке;#[br]• Защитим ваш отчет;
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 15 000 - 80 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 5 дней
                 .main__pic__text
                     .main__pic__title.t-4 Оценка воздушных#[br]и морских судов
                     .main__pic__table
-                        img(src="../img/table_avia.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_avia.png", alt="logo_avia")
+                            .table__container       
+                                .table__left-block
+                                    .table__title  Оценка авиа и судов:
+                                    .table__text.
+                                        • Самолеты;#[br]• Вертолеты;#[br]• Рыболовные суда;#[br]• Пасажирские судна;#[br]• Паромы/Буксиры;
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Залог в банк;#[br]• Купля - продажа;#[br]• Вклад в уставной капитал;#[br]• Изьятие/Лизинг/Выкуп;#[br]• Оценка ущерба;
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 10 000 - 30 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 2-4 дней
                 .main__pic__text
                     .main__pic__title.t-5 Оценка бизнеса
                     .main__pic__table
-                        img(src="../img/table_biz.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_bizn.png", alt="logo_bizn")
+                            .table__container       
+                                .table__left-block
+                                    .table__title  Оценка бизнеса:
+                                    .table__text.
+                                        • Переоценка активов;#[br]• Оценка финансов;#[br]• Выкуп акций;#[br]• Проведение эмиссий акций;#[br]• Обжалование суд.решения;
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Залог в банк;#[br]• Купля - продажа;#[br]• Судебные споры;#[br]• Изьятие/раздел/выкуп;#[br]• Кадастровые споры
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 10 000 - 30 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 3 дня
                 .main__pic__text
                     .main__pic__title.t-6 Оценка в целях оспаривания#[br]кадастровой  стоимости неджимости
                     .main__pic__table
-                        img(src="../img/table_kad.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_kad-ned.png", alt="logo_kad-ned")
+                            .table__container
+                                .table__left-block
+                                    .table__title  Оценка кад. недвижимости:
+                                    .table__text.
+                                        • Залог в банк;#[br]• Купля - продажа;#[br]• Раздел имущества;#[br]• Наследство;#[br]• Страхование;
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Учтем все тонкости;#[br]• Заключим договор;#[br]• Подготовим отчет;#[br]• Доставим отчет в банк/вам;
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 2 500 - 4 500 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 1 день
                 .main__pic__text
                     .main__pic__title.t-7 Оценка земельных#[br]участков
                     .main__pic__table
-                        img(src="../img/table_zem.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_zem.png", alt="logo_zem")
+                            .table__container  
+                                .table__left-block
+                                    .table__title  Оценка земельных участков:
+                                    .table__text.
+                                        • Садовые и СНТ;#[br]• ИЖС/этажная застройка;#[br]• Сельхоз земли;#[br]• Промышленные;#[br]• Лесные и специальные;
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Залог в банк;#[br]• Купля - продажа;#[br]• Судебные споры;#[br]• Изьятие/раздел/выкуп;#[br]• Кадастровые споры
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 10 000 - 30 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 3 дня
                 .main__pic__text
                     .main__pic__title.t-8 Оценка транспортных#[br]средств
                     .main__pic__table
-                        img(src="../img/table_trans.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_trans.png", alt="logo_trans")
+                            .table__container  
+                                .table__left-block
+                                    .table__title  Оценка транспорта:
+                                    .table__text.
+                                        • Легковые авто;#[br]• Грузовые авто;#[br]• Автосервисы/Мойки;#[br]• Морские и речные суда;#[br]• Самолеты и вертолеты;
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Залог в банк;#[br]• Купля - продажа;#[br]• Вклад в уставной капитал;#[br]• Изьятие/Лизинг/Выкуп;#[br]• Оценка ущерба;
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 2 000 - 30 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 1-4 дня
                 .main__pic__text
                     .main__pic__title.t-9 Оценка товарного#[br]знака и патентов
                     .main__pic__table
-                        img(src="../img/table_tov.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_tov.png", alt="logo_tov")
+                            .table__container  
+                                .table__left-block
+                                    .table__title  Переоценка осн.средств:
+                                    .table__text.
+                                        • Купли - продажи ТЗ;#[br]• Внесение в УК;#[br]• Ущерб от использования;#[br]• Роялти и лиценз. платежи;#[br]• Права и использования;
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Учтем все тонкости;#[br]• Заключим договор;#[br]• Составим отчет об оценке;#[br]• Защитим ваш отчет;
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 15 000 - 50 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 4 дня
                 .main__pic__text  
                     .main__pic__title.t-10 Оценка оборудования
                     .main__pic__table
-                        img(src="../img/table_obor.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_obor.png", alt="logo_obor")
+                            .table__container  
+                                .table__left-block
+                                    .table__title  Оценка оборудования:
+                                    .table__text.
+                                        • Станки;#[br]• Инструмент;#[br]• Производственные линии#[br]• Силовые и рабочие линии#[br]• Вычислительная техника
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Залог в банк;#[br]• Купля - продажа;#[br]• Вклад в уставной капитал#[br]• Изьятие/Лизинг/Выкуп#[br]• Оценка ущерба
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 2 000 - 30 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 1-4 дня
                 .main__pic__text
                     .main__pic__title.t-11 Оценка бренда#[br]и деловой репутации
                     .main__pic__table
-                        img(src="../img/table_brend.png", alt="table")
+                        .table
+                            .table__logo
+                                img(src="../img/logo_brend.png", alt="logo_brend")
+                            .table__container  
+                                .table__left-block
+                                    .table__title  Оценка бренда:
+                                    .table__text.
+                                        • Купля - продажа бренда;#[br]• Определение Гудвила;#[br]• Ущерб незаконного исп.;#[br]• Роялти и лиценз. платежи;#[br]• Права использования;
+                                .table__right-block
+                                    .table__title Оценить для:
+                                    .table__text.
+                                        • Учтем все тонкости;#[br]• Заключим договор;#[br]• Составим отчет об оценке;#[br]• Изьятие/Лизинг/Выкуп;#[br]• Защитим ваш отчет;
+                            .table__footer
+                                .table__item Стоимость услуг
+                                .table__item
+                                    span.table__line 2 000 - 30 000 Руб.
+                                .table__item Срок#[br]выполнения
+                                .table__item
+                                    span.table__line 1-4 дня
         section.otrasli.container
             .title-block.otrasli__title
                 h2.title-block__title
@@ -265,7 +463,7 @@ html(lang="ru")
                         .contacts__name
                             img(src="../img/logo_mail.png", alt="logo-tel")
                             span E-mail
-                        .contacts__text abk@active-consult.ru#[br]#[br]
+                        .contacts__text abk@active-consult.ru#[br.br]#[br.br]
                         button(type="button").btn.contacts__btn Написать
                 .contacts__map
                     #map

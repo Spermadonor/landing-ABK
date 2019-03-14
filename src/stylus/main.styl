@@ -67,9 +67,7 @@ section
         font-size 41px
         font-weight bold
         font-style italic
-
-.logo_blue
-    color #0f8ec7
+        color #0f8ec7
 .menu-gamb
     display none
     cursor pointer
@@ -149,6 +147,8 @@ nav.menu_height
         justify-content center
         +md()
             flex-direction column
+        +sm()
+            margin-top 50px
         >img
             position relative
             left 9px
@@ -158,17 +158,20 @@ nav.menu_height
             opacity 0
             position absolute
             left 50%
-            top 124px
+            top 184px
             transform translateX(-50%)
             trans(.7s)
             +md()
                 position static
+                margin-bottom 20px
                 opacity 1
                 transform translateX(0)
                 text-align center
-                img
-                    width 100%
         /&__text
+            +md()
+                dn()
+                &:nth-child(2)
+                    display block
         /.t-1
             left: 87px;
             top: 127px;
@@ -221,7 +224,117 @@ nav.menu_height
                     color #0a6087
                 /& + div
                     opacity 1
-
+.table
+    display inline-block
+    width 513px
+    top 0
+    font-size 13px
+    color #fff
+    text-align left
+    +md()
+        width 460px
+        font-size 13px
+    +xs()
+        width 243px
+    /&__logo
+        position relative
+        width 120px
+        height 63px
+        cent()
+        background-color #0a6087
+        &::after
+            display block
+            content ""
+            position absolute
+            width 100%
+            height 100%
+            top 0
+            left 0
+            box-shadow shad
+            z-index -1
+            +md()
+                dn()
+    /&__title
+        font-weight 900
+        background-color #0a6087
+        height 30px
+        line-height 30px
+        vertical-align center
+        padding-left 10px
+    /&__container
+        fl()
+        height 133px
+        justify-content space-between
+        +xs()
+            height auto
+            flex-direction column
+    /&__left-block, &__right-block
+        width 100%
+        max-width 242px
+        position relative
+        +xs()
+            padding-bottom 20px
+    /&__left-block,/&__right-block,/&__footer
+        background-color #0f8ec7
+        &::after
+            display block
+            content ""
+            position absolute
+            width 100%
+            height 100%
+            top 0
+            left 0
+            box-shadow shad
+            z-index -1
+            +md()
+                dn()
+    /&__text
+        margin-top 10px
+        padding-left 10px
+    /&__footer
+        position relative
+        margin-top 5px
+        font-weight 900
+        display flex
+        +xs()
+            width 243px
+            flex-wrap wrap
+    /&__item
+        height 40px
+        cent()
+        +xs()
+            width 100% !important
+            max-width initial !important
+            justify-content flex-start
+            padding-left 10px
+        &:first-child, &:nth-child(3)
+            background-color #0a6087
+        &:nth-child(2)
+            font-size 15px
+            +md()
+                font-size 13px
+        &:first-child
+            width 100%
+            max-width 143px
+        &:nth-child(2)
+            width 100%
+            max-width 183px
+        &:nth-child(3)
+            width 100%
+            max-max-width 104px
+        &:nth-child(4)
+            width 100%
+            max-width 80px
+    /&__line
+        position relative
+        &::after
+            content ''
+            position absolute
+            width 100%
+            height 1px
+            left 0
+            bottom 0
+            background-color #fff
 .otrasli
     /&__title
            margin 115px auto 
@@ -232,6 +345,8 @@ nav.menu_height
         margin-bottom -100px
         +md()
             justify-content center
+        +sm()
+            margin-top 90px
     /&__item
         col()
         position relative
@@ -294,6 +409,7 @@ nav.menu_height
     +sm()
         width auto
         text-align center
+        margin 50px 0
     /&__title
         display inline-block
         margin-left 40px
@@ -303,7 +419,7 @@ nav.menu_height
         text-transform uppercase
         font-weight bold
         +sm()
-            margin-left 0 !important
+            margin 0 !important
         svg
             margin-right 24px
             vertical-align middle
@@ -324,6 +440,8 @@ nav.menu_height
         width 100%
         top -9px
         background-color #fff
+        +sm()
+            display none
     /&::after
         display block
         content ""
@@ -345,12 +463,17 @@ nav.menu_height
     box-shadow  0 0 81px 0px #80808059
     overflow hidden
     z-index -1
+    +sm()
+        margin-top 90px
+        padding-bottom 20px
     /&__container
         margin-top 109px
         row-flex()
         flex-wrap wrap
         +md()
             justify-content center
+        +sm()
+            margin-top 50px
     /&__title
         margin 99px auto 0
         /&::after
@@ -403,6 +526,9 @@ nav.menu_height
         margin-top: 64px;
         padding: 16px 32px;
         text-transform uppercase
+        +sm()
+            margin-top -10px
+            margin-bottom 0
 .list
     /&__item
         cent()
@@ -411,6 +537,8 @@ nav.menu_height
         height 113px
         margin-bottom 123px
         border 3px solid #ffd33c
+        +sm()
+            margin-bottom 70px
     /&__num
         display block
         position absolute
@@ -458,6 +586,9 @@ nav.menu_height
     box-shadow  0 0 81px 0px #80808059
     overflow hidden
     z-index -1
+    +sm()
+        margin-top 80px
+        padding-bottom 30px
     /&__title
         width 530px
         margin auto
@@ -481,6 +612,8 @@ nav.menu_height
         align-items center
         +md()
             justify-content center
+        +sm()
+            margin-top 50px
     /&__item
         col()
         size(3)
@@ -518,12 +651,16 @@ nav.menu_height
         margin-top: 119px;
         padding: 16px 25px;
         text-transform uppercase
+        +sm()
+            margin-top 40px
 .scheme
     display inline-block
     margin-top 116px
     position relative
     +md()
         display block
+    +sm()
+        margin-top -30px
     /&__list
         +md()
             fl()
@@ -614,6 +751,8 @@ nav.menu_height
     background url("../img/bg_3.png") no-repeat center/cover
     box-shadow  0 0 81px 0px #80808059
     overflow hidden
+    +sm()
+        margin-top 80px
     /&__title
         margin auto
         width 677px
@@ -680,7 +819,10 @@ nav.menu_height
         fl()
         margin-top 82px
         justify-content space-between
+        +md()
+            padding-bottom 30px
         +sm()
+            margin-top -70px
             flex-wrap wrap
     /&__wrap
         +sm()
@@ -704,7 +846,7 @@ nav.menu_height
             margin 0 5px
     /&__text
         margin-bottom 12px
-        br
+        br.br
             dn()
             +sm()
                 display initial
@@ -725,6 +867,10 @@ footer
     padding: 17px 0;
     margin-top: 93px;
     background-color #0a6087
+    +md()
+        margin-top 63px
+    +sm()
+        margin-top 50px
     .head-foot__logo, .menu__item,.svyz__tel
         color #fff
     .menu__item::after
