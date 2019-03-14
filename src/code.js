@@ -41,12 +41,23 @@ $('.zayv').click(()=> {
 $('.menu-gamb').click(function() {
 	$(this).next().toggleClass('menu_height');
 })
-
-
+var slider = false;
 if (window.matchMedia("(max-width: 976px)").matches) {
-	//$('.main__pic').css('display', 'none');
-	$('.main__pic_img').remove();
-	$(".main__pic").slick({
-		dots: true
-	});
+		slider = true;
+		var image = $('.main__pic_img');
+		image.remove();
+		var slick = $(".main__pic").slick({
+			dots: true
+		});
 }
+
+$(window).resize(function() {
+	if (window.matchMedia("(max-width: 976px)").matches && !slider) {
+		var image = $('.main__pic_img');
+		image.remove();
+		var slick = $(".main__pic").slick({
+			dots: true
+		});
+		slider = true;
+	}
+})

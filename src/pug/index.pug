@@ -7,8 +7,8 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         meta(name="description" content="")
         meta(name="keywords" content="")
+        link(rel="stylesheet", href="main.css")
         title АБК - Активные Бизнес Консультации, независимая оценочная компания
-        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ec9e89fa-00e9-4108-93ba-4a505c2ece77")
     body
         header.container
             .head-foot
@@ -249,21 +249,24 @@ html(lang="ru")
                             | Наши контакты:
             .contacts__block
                 .contacts__data
-                    .contacts__name
-                        img(src="../img/logo_home.png", alt="logo-home")
-                        span Центральный адрес
-                    .contacts__text г.Москва Электрический пер., д. 3/10, с. 3, эт. 3.
-                    button(type="button").btn.contacts__btn Показать на карте
-                    .contacts__name
-                        img(src="../img/logo_tel.png", alt="logo-tel")
-                        span Главные телефоны
-                    .contacts__text +7 (495) 134-47-55#[br]+7 (495) 134-47-55
-                    button(type="button").btn.contacts__btn Позвонить
-                    .contacts__name
-                        img(src="../img/logo_mail.png", alt="logo-tel")
-                        span E-mail
-                    .contacts__text abk@active-consult.ru
-                    button(type="button").btn.contacts__btn Написать
+                    .contacts__wrap
+                        .contacts__name
+                            img(src="../img/logo_home.png", alt="logo-home")
+                            span Центральный адрес
+                        .contacts__text г.Москва Электрический пер., д. 3/10, с. 3, эт. 3.
+                        button(type="button").btn.contacts__btn Показать на карте
+                    .contacts__wrap
+                        .contacts__name
+                            img(src="../img/logo_tel.png", alt="logo-tel")
+                            span Главные телефоны
+                        .contacts__text +7 (495) 134-47-55#[br]+7 (495) 134-47-55
+                        button(type="button").btn.contacts__btn Позвонить
+                    .contacts__wrap
+                        .contacts__name
+                            img(src="../img/logo_mail.png", alt="logo-tel")
+                            span E-mail
+                        .contacts__text abk@active-consult.ru#[br]#[br]
+                        button(type="button").btn.contacts__btn Написать
                 .contacts__map
                     #map
         footer
@@ -303,3 +306,5 @@ html(lang="ru")
                     input(type="checkbox")
                     span.modal-z__custom-select
                     |Даю согласие на обработку моих пресоональных данных
+        script(defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ec9e89fa-00e9-4108-93ba-4a505c2ece77")
+        script(defer src='code.js')

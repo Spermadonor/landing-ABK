@@ -112,7 +112,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/pug/index.pug',
-      inject: 'body'
+      inject: false
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css"
