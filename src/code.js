@@ -2,6 +2,7 @@ import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '@fancyapps/fancybox';
+import WOW from'WOWjs';
 //import 'lazyYT/lazyYT.js';
 import './fonts/fonts.css';
 
@@ -61,3 +62,9 @@ $(window).resize(function() {
 		slider = true;
 	}
 })
+
+if (window.matchMedia("(min-width: 1243px)").matches && !slider) {
+	new WOW.WOW({
+		 mobile: true
+	}).init();
+}

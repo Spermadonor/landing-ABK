@@ -1,6 +1,7 @@
 @import 'mixin.styl'
 @import '~normalize.css'
 @import '~@fancyapps/fancybox/dist/jquery.fancybox.min.css'
+@import '~wowjs/css/libs/animate.css'
 // @import '~lazyYT/lazyYT.css'
 
 *, *::before, *::after
@@ -211,7 +212,7 @@ nav.menu_height
             color #0a6087
             font-weight bold
             text-transform uppercase
-            cursor pointer
+            cursor default
             z-index 1
             +md()
                 position static
@@ -855,6 +856,9 @@ nav.menu_height
         padding 8px 0
         max-width 171px
         margin-bottom 31px
+        cursor default
+        /&:hover
+            background-color #0f8ec7
     /&__map
         width 100%
         max-width 946px
