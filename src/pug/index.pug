@@ -16,17 +16,17 @@ html(lang="ru")
                 .head-foot__menu
                     +spr('bur', '48px')(fill="#000").menu-gamb
                     nav.menu
-                        a(href="#").menu__item О компании
-                        a(href="#").menu__item Отрасли
-                        a(href="#").menu__item Гарантии
-                        a(href="#").menu__item Схема работы
-                        a(href="#").menu__item Контакты
+                        a(href="#about").menu__item О компании
+                        a(href="#otrasli").menu__item Отрасли
+                        a(href="#garantii").menu__item Гарантии
+                        a(href="#worck").menu__item Схема работы
+                        a(href="#contacts").menu__item Контакты
                 .head-foot__svyz.svyz
                     .svyz__tel +7 (495) 134-47-55
                     .svyz__soc
-                        a(href="#")
+                        a(href="https://wa.me/74951344755")
                             img(src="../img/whatsapp.png", alt="logo whatsapp").svyz_soc__logo
-                        a(href="#")
+                        a(href="viber://chat?number=74951344755")
                             img(src="../img/viber.png", alt="logo viber")
                         a(href="#")
                             img(src="../img/vk.png", alt="logo vk")
@@ -457,7 +457,7 @@ html(lang="ru")
                         .contacts__name
                             img(src="../img/logo_tel.png", alt="logo-tel")
                             span Главные телефоны
-                        .contacts__text +7 (495) 134-47-55#[br]+7 (495) 134-47-55
+                        .contacts__text +7 (495) 134-47-55#[br]+7(916) 357-75-84
                         button(type="button").btn.contacts__btn Позвонить
                     .contacts__wrap
                         .contacts__name
@@ -474,17 +474,17 @@ html(lang="ru")
                     .head-foot__menu
                         +spr('bur', '48px')(fill="#fff").menu-gamb
                         nav.menu
-                            a(href="#").menu__item О компании
-                            a(href="#").menu__item Отрасли
-                            a(href="#").menu__item Гарантии
-                            a(href="#").menu__item Схема работы
-                            a(href="#").menu__item Контакты
+                            a(href="#about").menu__item О компании
+                            a(href="#otrasli").menu__item Отрасли
+                            a(href="#garantii").menu__item Гарантии
+                            a(href="#worck").menu__item Схема работы
+                            a(href="#contacts").menu__item Контакты
                     .head-foot__svyz.svyz
                         .svyz__tel +7 (495) 134-47-55
                         .svyz__soc
-                            a(href="#")
+                            a(href="https://wa.me/74951344755")
                                 img(src="../img/whatsapp-2.png", alt="logo whatsapp").svyz_soc__logo
-                            a(href="#")
+                            a(href="viber://chat?number=74951344755")
                                 img(src="../img/viber-2.png", alt="logo viber")
                             a(href="#")
                                 img(src="../img/vk-2.png", alt="logo vk")
@@ -495,14 +495,16 @@ html(lang="ru")
                     .head-foot__btn
                         button(type="button").btn.zayv Оставить заявку
         .modal-z
-            form(action="" method="post")
+            form(action="/send.php" method="post" novalidate)
                 input(type="text" name='name' placeholder="Ваше имя")
                 input(type="tel" name="phone" placeholder="Контактный телефон")
                 input(type="email" name="mail" placeholder="Ващ E-mail")
                 button(type="submit").btn Отправить
                 label
-                    input(type="checkbox")
+                    input(type="checkbox" name="query" value=1)
                     span.modal-z__custom-select
                     |Даю согласие на обработку моих пресоональных данных
+        .modal-thanks
+            .modal-thanks__text Спасибо за Ваше обращение.#[br]Скоро с Вами свяжется наш сотрудник.
         script(defer src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ec9e89fa-00e9-4108-93ba-4a505c2ece77")
         script(defer src='code.js')
