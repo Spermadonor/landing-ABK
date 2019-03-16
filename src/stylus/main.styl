@@ -28,6 +28,13 @@ section, header, footer
 section
     +md()
         overflow hidden
+header
+    position sticky
+    top 0
+    background-color #fff
+    z-index 3
+.hide
+    display none
 .head-foot
     row-flex()
     align-items center
@@ -951,3 +958,10 @@ footer
     /&__text
         color #0f7fb1
         text-align center
+
+
+.sticky-top-ie
+    position fixed
+    width 100%
+    z-index 99
+    top 0px

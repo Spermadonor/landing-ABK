@@ -37,6 +37,7 @@
     "svg-spritemap-webpack-plugin": "*",
     "svg-url-loader": "*",
     "tinify-loader": "*",
+    "uglifyjs-webpack-plugin": "^2.1.2",
     "url-loader": "*",
     "webpack": "*",
     "webpack-cli": "*",

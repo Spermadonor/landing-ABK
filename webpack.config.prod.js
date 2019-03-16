@@ -12,7 +12,7 @@ const SVGSpritemapPlugin = require('svg-spritemap-webpack-plugin'),
 module.exports = {
   mode: 'production',
   entry: ['./src/code.js',
-    './src/main.styl'
+    './src/stylus/main.styl'
   ],
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -63,11 +63,14 @@ module.exports = {
           'html-loader',
           {
             loader: 'pug-html-loader',
+             options: {
+              pretty: true
+            }
           }
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.(png|jpe?g)$/i,
         use: [{
             loader: 'url-loader',
             options: {
@@ -78,10 +81,21 @@ module.exports = {
           {
             loader: 'tinify-loader',
             options: {
-              apikey: ['27DcTE0ZENMnBYBfnuPCKyGA7A7vERyR'],
+              apikey: '27DcTE0ZENMnBYBfnuPCKyGA7A7vERyR',
               cache: '/cachTinify/'
             }
           }
+        ]
+      },
+      {
+        test: /\.(gif)$/i,
+        use: [{
+            loader: 'url-loader',
+            options: {
+              name: "./img/[name].[ext]",
+              limit: 10 * 1024
+            }
+          },
         ]
       },
       {
@@ -96,7 +110,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(distRoot),
+ /*   new CleanWebpackPlugin({
+      on: "emit",
+      path: distRoot
+    }),*/
     new SVGSpritemapPlugin('./src/img/svg/**/*.svg', {
       output: {
           filename: 'img/svg/spritemap.svg',
@@ -109,7 +126,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: './src/index.pug',
+      template: './src/pug/index.pug',
       inject: false
     }),
     new MiniCssExtractPlugin({

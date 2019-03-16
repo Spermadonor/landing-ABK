@@ -10,33 +10,35 @@ html(lang="ru")
         link(rel="stylesheet", href="main.css")
         title АБК - Активные Бизнес Консультации, независимая оценочная компания
     body
-        header.container
-            .head-foot
-                .head-foot__logo ABK
-                .head-foot__menu
-                    +spr('bur', '48px')(fill="#000").menu-gamb
-                    nav.menu
-                        a(href="#about").menu__item О компании
-                        a(href="#otrasli").menu__item Отрасли
-                        a(href="#garantii").menu__item Гарантии
-                        a(href="#worck").menu__item Схема работы
-                        a(href="#contacts").menu__item Контакты
-                .head-foot__svyz.svyz
-                    .svyz__tel +7 (495) 134-47-55
-                    .svyz__soc
-                        a(href="https://wa.me/74951344755")
-                            img(src="../img/whatsapp.png", alt="logo whatsapp").svyz_soc__logo
-                        a(href="viber://chat?number=74951344755")
-                            img(src="../img/viber.png", alt="logo viber")
-                        a(href="#")
-                            img(src="../img/vk.png", alt="logo vk")
-                        a(href="#")
-                            img(src="../img/facebook.png", alt="facebook logo").svyz_soc__logo
-                        a(href="#")
-                            img(src="../img/instagram.png", alt="instagram logo").svyz_soc__logo
-                .head-foot__btn
-                    button(type="button").btn.zayv Оставить заявку
+        header.sticky-top
+            .container
+                .head-foot
+                    .head-foot__logo ABK
+                    .head-foot__menu
+                        +spr('bur', '48px')(fill="#000").menu-gamb
+                        nav.menu
+                            a(href="#about").menu__item О компании
+                            a(href="#otrasli").menu__item Отрасли
+                            a(href="#garantii").menu__item Гарантии
+                            a(href="#worck").menu__item Схема работы
+                            a(href="#contacts").menu__item Контакты
+                    .head-foot__svyz.svyz
+                        .svyz__tel +7 (495) 134-47-55
+                        .svyz__soc
+                            a(href="https://api.whatsapp.com/send?phone=79163577584" target="blank")
+                                img(src="../img/whatsapp.png", alt="logo whatsapp").svyz_soc__logo
+                            a(href="viber://add?number=79163577584")
+                                img(src="../img/viber.png", alt="logo viber")
+                            a(href="#")
+                                img(src="../img/vk.png", alt="logo vk")
+                            a(href="#")
+                                img(src="../img/facebook.png", alt="facebook logo").svyz_soc__logo
+                            a(href="#")
+                                img(src="../img/instagram.png", alt="instagram logo").svyz_soc__logo
+                    .head-foot__btn
+                        button(type="button").btn.zayv Оставить заявку
         section.main.container
+            h2.hide  Сферы деятеьности.
             .main__pic
                 img.main__pic_img(src="../img/main.png", alt="pic")
                 .main__pic__text
@@ -282,7 +284,7 @@ html(lang="ru")
                                 .table__item
                                     span.table__line 1-4 дня
         section.otrasli.container
-            .title-block.otrasli__title.wow.flip
+            .title-block.otrasli__title
                 h2.title-block__title
                     +spr('tire', 60, 4)
                     | Когда поможем?
@@ -309,7 +311,7 @@ html(lang="ru")
             button(type="button").otrasli__btn.btn.zayv.wow.wobble Заказать услугу
         section.garantii
             .container
-                .title-block.garantii__title.wow.flip
+                .title-block.garantii__title
                     h2.title-block__title
                         +spr('tire', 60, 4)
                         | Мы достойны!
@@ -340,7 +342,7 @@ html(lang="ru")
                         img(src="../img/euro.png", alt="icon")
                         .garantii__item__text СТРАХОВАНИЕ КОМПАНИИ БОЛЕЕ ЧЕМ НА 500 МЛН РУБ
         section.worck.container
-            .title-block.worck__title.wow.flip
+            .title-block.worck__title
                 h2.title-block__title
                     +spr('tire', 60, 4)
                     | Порядок работы:
@@ -366,7 +368,7 @@ html(lang="ru")
             button(type="button").btn.zayv.wow.pulse Заказать услугу
         section.clienti
             .container
-                .title-block.clienti__title.wow.flip
+                .title-block.clienti__title
                     h2.title-block__title
                         +spr('tire', 60, 4)
                         | Нам доверили оценку:
@@ -401,7 +403,7 @@ html(lang="ru")
                         .clienti__item.mt.wow.bounceInUp
                             img(src="../img/logo_gazb.png", alt="logo")
         section.about.container
-            .title-block.about__title.wow.flip
+            .title-block.about__title
                     h2.title-block__title
                         +spr('tire', 60, 4)
                         | О нашей компании:
@@ -433,7 +435,7 @@ html(lang="ru")
             button(type="button").btn.zayv.wow.pulse Связаться с нами
         section.predstav
             .container
-                .title-block.predstav__title.wow.rotateIn
+                .title-block.predstav__title
                         h2.title-block__title
                             +spr('tire', 60, 4)
                             | Наши представительства в России:
@@ -441,7 +443,7 @@ html(lang="ru")
                 .inter-map
                     img.inter-map__img(src="../img/map.png", alt="pic map")
         section.contacts.container
-            .title-block.contacts__title.wow.flip
+            .title-block.contacts__title
                         h2.title-block__title
                             +spr('tire', 60, 4)
                             | Наши контакты:
@@ -482,9 +484,9 @@ html(lang="ru")
                     .head-foot__svyz.svyz
                         .svyz__tel +7 (495) 134-47-55
                         .svyz__soc
-                            a(href="https://wa.me/74951344755")
+                            a(href="https://api.whatsapp.com/send?phone=79163577584" target="blank")
                                 img(src="../img/whatsapp-2.png", alt="logo whatsapp").svyz_soc__logo
-                            a(href="viber://chat?number=74951344755")
+                            a(href="viber://add?number=79163577584")
                                 img(src="../img/viber-2.png", alt="logo viber")
                             a(href="#")
                                 img(src="../img/vk-2.png", alt="logo vk")
@@ -501,7 +503,7 @@ html(lang="ru")
                 input(type="email" name="mail" placeholder="Ващ E-mail")
                 button(type="submit").btn Отправить
                 label
-                    input(type="checkbox" name="query" value=1)
+                    input(type="checkbox" name="query" checked value=1)
                     span.modal-z__custom-select
                     |Даю согласие на обработку моих пресоональных данных
         .modal-thanks
