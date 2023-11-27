@@ -1,2 +1,2 @@
 # landing-ABK
-Linck - https://spermadonor.github.io/landing-ABK/
+Link - https://spermadonor.github.io/landing-ABK/
